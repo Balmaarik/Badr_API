@@ -9,28 +9,32 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/editText1"
-        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignBaseline="@+id/search_text"
+        android:layout_alignBottom="@+id/search_text"
         android:layout_alignParentRight="true"
         android:text="Search" />
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/search_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/button1" >
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_text" >
     </ListView>
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/search_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button1"
-        android:ems="10" />
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
